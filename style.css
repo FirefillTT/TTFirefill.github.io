@@ -124,6 +124,7 @@ button{
     border-radius: 20px;
     box-shadow: 0 0 20px black;
     transition: 1s;
+    color:black;
     
 }
 .buttons{
