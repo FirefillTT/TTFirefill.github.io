@@ -15,6 +15,12 @@
     height: auto;
     
 }
+button.text:active,
+button.text:hover,
+button.text {
+  text-decoration: none;
+  color: black;
+}
 body{
     background: rgb(0,0,0);
     background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(107,211,26,1) 100%);
