@@ -1,36 +1,24 @@
 
+
 .main__container{
-    width: 650px;
+    max-width: 700px;
     margin: auto;
     margin-top: 5%;
     border: 3px solid black;
     box-shadow: 0 0 20px black;
     padding: 8px;
-    margin-bottom: 100%;
+    margin-bottom: 100px;
     height: auto;
     background-color: whitesmoke;
     color: black;
     border-radius: 30px;
     font-family: 'Montserrat Alternates', sans-serif;
-    height: auto;
     
-}
-button.text:active,
-button.text:hover,
-button.text {
-  text-decoration: none;
-  color: black;
 }
 body{
-    background: rgb(0,0,0);
     background: linear-gradient(153deg, rgba(0,0,0,1) 0%, rgba(107,211,26,1) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-position: top 90%;
-    height: 1500px;
     width: 100%;
-    
+    margin: 0;
 }
 .center{
     text-align: center;
@@ -55,7 +43,7 @@ body{
 }
 .fon{
     background-color: #102600;
-    width: 640px;
+    max-width: 690px;
     height: 90px;
     margin-top: 3px;
     border: 3px solid black;
@@ -75,11 +63,9 @@ li{
 .lol{
    width: 200px; 
    height: 350px;
-   margin-left: 11px;
    box-shadow: 0 0 20px black;
    margin-top: 30px;
    margin-bottom: 20px;
-   background: rgb(16,38,0);
     background: linear-gradient(180deg, rgba(16,38,0,1) 0%, rgba(107,211,26,1) 41%);
     border-radius: 20px;
     transition: 1s;
@@ -88,6 +74,8 @@ li{
 .all{
     display: flex;
     padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 .photo{
@@ -124,8 +112,14 @@ button{
     border-radius: 20px;
     box-shadow: 0 0 20px black;
     transition: 1s;
-    color:black;
+    text-decoration:none;
     
+}
+button.text:active,
+button.text:hover,
+button.text {
+  text-decoration: none;
+  color: black;
 }
 .buttons{
     margin: auto;
@@ -148,4 +142,25 @@ button:hover{
 }
 *{
     text-decoration:none;
+    box-sizing: border-box;
+}
+.avatarka{
+    text-rendering: optimizespeed;
+    line-height: 1.5;
+    font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+    font-size: 14px;
+    color: rgb(22, 24, 35);
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+}
+@media(max-width:720px){
+    .main__container{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }
